@@ -92,17 +92,6 @@ Requires [Docker Compose](https://docs.docker.com/compose/) v2 (`docker compose`
 
 ---
 
-## CLI scripts (optional)
-
-| Script | Notes |
-|--------|--------|
-| `npm run summarize` | Like interactive summarize; **opens its own** browser session — **stop `npm run start`** first, or use the REPL. Optional: `npm run summarize -- "Group Name"`. |
-| `npm run report` | Latest summary to stdout (no WhatsApp) |
-| `npm run export` | Writes **`data/exports/summary-<timestamp>.md`** |
-| `npm run groups` / `npm run status` | Standalone session for lists / status — stop **`npm run start`** first if you use a separate session |
-
----
-
 ## How it works
 
 - **WhatsApp** (`whatsapp-web.js` + `LocalAuth`): only the **effective** group is stored; empty and **media-only** messages are skipped.
@@ -118,7 +107,6 @@ Requires [Docker Compose](https://docs.docker.com/compose/) v2 (`docker compose`
 |------|----------|
 | `data/whatsup.db` | Messages + summaries |
 | `data/wwebjs_session/` | WhatsApp session (private; in `.gitignore`) |
-| `data/exports/` | Markdown from **`npm run export`** |
 
 ---
 

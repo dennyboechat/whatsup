@@ -5,12 +5,7 @@
   "private": true,
   "main": "src/cli/start.js",
   "scripts": {
-    "start": "node src/cli/start.js",
-    "summarize": "node src/cli/summarize.js",
-    "report": "node src/cli/report.js",
-    "export": "node src/cli/export.js",
-    "groups": "node src/cli/groups.js",
-    "status": "node src/cli/status.js"
+    "start": "node src/cli/start.js"
   },
   "engines": {
     "node": ">=20"
