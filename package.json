@@ -1,0 +1,26 @@
+{
+  "name": "whatsup",
+  "version": "1.0.0",
+  "description": "Local-first WhatsApp group listener with AI summaries",
+  "private": true,
+  "main": "src/cli/start.js",
+  "scripts": {
+    "start": "node src/cli/start.js",
+    "summarize": "node src/cli/summarize.js",
+    "report": "node src/cli/report.js",
+    "export": "node src/cli/export.js",
+    "groups": "node src/cli/groups.js",
+    "status": "node src/cli/status.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3",
+    "openai": "^4.77.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.26.0"
+  }
+}

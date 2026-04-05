@@ -1,0 +1,15 @@
+services:
+  whatsup:
+    build: .
+    image: whatsup:local
+    container_name: whatsup
+    env_file: .env
+    environment:
+      # Override if your Chromium path differs in the image
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium
+    volumes:
+      # WhatsApp session + SQLite: keep on the host for upgrades and backups
+      - ./data:/app/data
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
